@@ -1,0 +1,24 @@
+    {
+    "grupo": "Grupo Nº10",
+    "integrantes": [
+        {
+            "nombreApellido": "Ceccarelli, Pablo Alejandro",
+            "mail": "pabloceccarelli99@gmail.com",
+            "skills": "CSS, ReactJs",
+            "foto": "https://scontent.ftuc2-1.fna.fbcdn.net/v/t1.6435-9/51741880_2633945973312761_3692964742554451968_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGuPSXKxsJHcFp2ijOaSVA8No8ieo4zyrI2jyJ6jjPKsh4bajrPhTyk8Hw3c9-OdpPHeAMSmfup_h_YAfrlSdJP&_nc_ohc=8joZhyQ8NzEAX-DuI8H&_nc_ht=scontent.ftuc2-1.fna&oh=00_AfArXZjiuZ8tQ9wy3LTGW7L4Tz03IZqq5w_hyTBxu_-oRg&oe=63A0FFE9"
+        
+        },
+        {
+            "nombreApellido": "Fernandez, Alexis",
+            "mail": "alexis_fernandez@gmai.com",
+            "skills": "Javascript, NodeJs",
+            "foto": "https://scontent.ftuc2-1.fna.fbcdn.net/v/t1.6435-9/122261148_188824686080963_4941662903161879197_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHut2Qz0Yl4tG-ksGPaWp6udsiv9MQ-Z0x2yK_0xD5nTGchRZMlRAUpxBf0ihq3Tzqe0RoqtJ2SeDUAUPayud_x&_nc_ohc=bYQrU1D7-hkAX88KQue&_nc_ht=scontent.ftuc2-1.fna&oh=00_AfBK4XpX1caiJmcjvxdVMzvvwxXt0szcSZzKrk7z57H0Hg&oe=63A79AE2"
+        },
+        {
+            "nombreApellido": "Santillan, Lautaro",
+            "mail": "lautaro_santillan@gmail.com",
+            "skills": "MongoDB, MaterialUI",
+            "foto": "https://scontent.ftuc2-1.fna.fbcdn.net/v/t39.30808-6/273473898_474313080730908_5149419076538110550_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFgt-eyqnuT6uKwe-aOLIzOSqkAQ5BqOIhKqQBDkGo4iDJteork7h4AwIGtYQDn4yJ42WDZcRDHShRL2BEcaif4&_nc_ohc=m5UhPVC2Wq0AX_htepb&tn=ZBqP0kVRVwniLVQB&_nc_ht=scontent.ftuc2-1.fna&oh=00_AfAUp8DhMUx_chgAM4eAyigEgAwnJMQ4Z4-vQkup6CAKmA&oe=6384E921"
+        }
+    ]
+}
