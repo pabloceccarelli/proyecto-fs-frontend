@@ -4,6 +4,7 @@ import QuienesSomosPage from "../Page/QuienesSomosPage"
 import ProtectedRoute from "./ProtectedRoute"
 import Login from "../Page/Login"
 import EnConstruccion from "../Page/EnConstruccion"
+import Products from "../Page/Products"
 
 const AppRouter = () =>{
     return(
@@ -20,7 +21,7 @@ const AppRouter = () =>{
                     <Route exact path="/products/running" component={EnConstruccion}/>
                     <Route exact path="/products/futbol" component={EnConstruccion}/>
                     <Route exact path="/products/casual" component={EnConstruccion}/>
-                    <Route exact path="/products" component={EnConstruccion}/>
+                    <Route exact path="/products" component={Products}/>
 
                     <ProtectedRoute exact path ="/protegido" params={true}/>
                 </Switch>
