@@ -7,7 +7,12 @@ let { getAllProducts } = require ('../service/apiCall');
 let response = getAllProducts();
 console.log(response);
 
-
+let { getAllProducts } = require('../service/apiCall');
+let response;
+(async () => {
+    response = await getAllProducts();
+})
+    ();
 const ProductsBody = () => {
     
     return (
