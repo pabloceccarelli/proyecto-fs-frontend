@@ -1,32 +1,36 @@
 import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/esm/Container';
 import CartaProducts from './CartaProducts';
-/* import { getAllProducts } from '../service/apiCall';
- */
-let { getAllProducts } = require ('../service/apiCall');
-let response = getAllProducts();
-console.log(response);
 
-let { getAllProducts } = require('../service/apiCall');
-let response;
+import productos from '../data/products.json'
+
+/*  */
+/* let { getAllProducts } = require('../service/apiCall'); */
+
+/* let response;
+
 (async () => {
     response = await getAllProducts();
-})
-    ();
-const ProductsBody = () => {
+    console.log(response);
     
+})();
+
+ */
+const ProductsBody = () => {
+
     return (
-        
+
         <Container>
             <br />
-            <CardGroup>
-{/*                 {
-                    productos.array.forEach(element => {
-                      <CartaProducts {...element}/>  
-                    })
-                } */}
-                <CartaProducts {...response[0]}/>
-            </CardGroup>
+            <div className="row">
+                {productos.map(element => {
+                    return <div className="col-xl-2 col-lg-3 col-md-6 col-sm-12"><CartaProducts {...element} /> <br/></div>
+                }
+                )}
+
+            </div>
+
+
             <br />
 
         </Container>

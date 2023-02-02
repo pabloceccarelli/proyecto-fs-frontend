@@ -19,6 +19,5 @@ export const login = async(user)=>{
 
 export const getAllProducts = async()=>{
     const response = await axios.get("http://localhost:8000/products");
-    console.log(response.data);
     return response.data;
 }
