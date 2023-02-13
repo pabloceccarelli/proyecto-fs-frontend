@@ -1,40 +1,35 @@
-import CardGroup from 'react-bootstrap/CardGroup';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import CartaProducts from './CartaProducts';
 
-import productos from '../data/products.json'
+let { getAllProducts } = require('../service/apiCall');
 
-/*  */
-/* let { getAllProducts } = require('../service/apiCall'); */
+const ProductsBody = () =>{
+    const [products, setProducts] = useState([]);
 
-/* let response;
+    useEffect (()=>{
+        getProducts();
+    },[]);
 
-(async () => {
-    response = await getAllProducts();
-    console.log(response);
-    
-})();
-
- */
-const ProductsBody = () => {
+    const getProducts = async () =>{
+        const respuesta = await getAllProducts();
+        setProducts(respuesta);
+    }
 
     return (
 
         <Container>
             <br />
             <div className="row">
-                {productos.map(element => {
-                    return <div className="col-xl-2 col-lg-3 col-md-6 col-sm-12"><CartaProducts {...element} /> <br/></div>
+                {products.map(element => {
+                    return <div className="col-6"><CartaProducts {...element} /> <br/></div>
                 }
                 )}
 
             </div>
-
-
             <br />
-
         </Container>
-
     );
 }
 
