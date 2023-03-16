@@ -17,13 +17,15 @@ const ProductsBody = () =>{
         setProducts(respuesta);
     }
 
+
     return (
 
         <Container>
             <br />
             <div className="row">
                 {products.map(element => {
-                    return <div className="col-6"><CartaProducts {...element} /> <br/></div>
+                    return <div className="col-6"><CartaProducts {...element} />
+                     <br/></div>
                 }
                 )}
 

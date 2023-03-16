@@ -4,13 +4,13 @@ export const register = async(user)=>{
     //user.password = encrypt (user.password);
     //aquí iría la encriptación
     
-    const response = await axios.post("http://localhost:8000/users/register", user);
+    const response = await axios.post("http://192.168.21.50:8000/users/register", user);
     return response.data;
 }
 
 export const login = async(user)=>{
 
-    const response = await axios.post("http://localhost:8000/users/login", user);
+    const response = await axios.post("http://192.168.21.50:8000/users/login", user);
     
     return response.data;
     
@@ -18,6 +18,6 @@ export const login = async(user)=>{
 }
 
 export const getAllProducts = async()=>{
-    const response = await axios.get("http://localhost:8000/products");
+    const response = await axios.get("http://192.168.21.50:8000/products");
     return response.data;
 }
