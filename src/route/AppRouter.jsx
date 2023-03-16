@@ -16,8 +16,8 @@ const AppRouter = () =>{
                     <Route exact path ="/quienes_somos" component = {QuienesSomosPage}/>
                     <Route exact path ="/login" component={Login}/>
                     <Route exact path="/contacto" component={EnConstruccion}/>
-                    <Route exact path="/products/hombres" component={EnConstruccion}/>
-                    <Route exact path="/products/mujeres" component={EnConstruccion}/>
+                    <Route exact path="/products/hombres" component={Products}/>
+                    <Route exact path="/products/mujeres" component={Products}/>
                     <Route exact path="/products/running" component={EnConstruccion}/>
                     <Route exact path="/products/futbol" component={EnConstruccion}/>
                     <Route exact path="/products/casual" component={EnConstruccion}/>

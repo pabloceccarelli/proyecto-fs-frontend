@@ -2,18 +2,26 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import CartaProducts from './CartaProducts';
+import { useHistory } from 'react-router-dom';
 
-let { getAllProducts } = require('../service/apiCall');
+let { getProducts } = require('../service/apiCall');
 
-const ProductsBody = () =>{
+const ProductsBody = () => {
+
+    const history = useHistory();
+
+    const rutaActual = history.location.pathname;
+    console.log(rutaActual);
+
     const [products, setProducts] = useState([]);
 
-    useEffect (()=>{
-        getProducts();
+    useEffect(() => {
+        getProductsArray();
+        // eslint-disable-next-line
     },[]);
 
-    const getProducts = async () =>{
-        const respuesta = await getAllProducts();
+    const getProductsArray = async () => {
+        const respuesta = await getProducts(rutaActual);
         setProducts(respuesta);
     }
 
@@ -24,8 +32,7 @@ const ProductsBody = () =>{
             <br />
             <div className="row">
                 {products.map(element => {
-                    return <div className="col-6"><CartaProducts {...element} />
-                     <br/></div>
+                    return <div className="col-6"><CartaProducts {...element} /><br /></div>
                 }
                 )}
 
